@@ -57,7 +57,7 @@ def contactdealer(request):
         send_mail(
             'Dealer\'s Information',
             msg1,
-            'manas.jayaswal.cse21@itbhu.ac.in',
+            'rohit.student.mec21@itbhu.ac.in',
             [email],
             fail_silently=False,
         )
