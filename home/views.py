@@ -32,7 +32,7 @@ def search(request):
 
 def contactdealer(request):
     # if request.method == "GET":
-    #     print("manas jayaswal")
+    #     print("rohit yadav")
     #     selectedDealer = Dealer.objects.get(house_id = request.GET['houseid'])
     #     print(selectedDealer)
     # print(selectedDealer)
@@ -40,7 +40,7 @@ def contactdealer(request):
     # # print(selectedDealer)
     # # abc = selectedDealer
     if request.method == "GET":
-        # print("manas jayaswal is gonna rock")
+        # print("rohit yadav is gonna rock")
         global selectedDealer
         selectedDealer = House.objects.filter(house_id=request.GET['houseid'])
         # print(selectedDealer)
@@ -65,7 +65,7 @@ def contactdealer(request):
         send_mail(
             'Customer\'s Information',
             msg2,
-            'manas.jayaswal.cse21@itbhu.ac.in',
+            'rohit.student.mec21@itbhu.ac.in',
             [selectedDealer.email_id],
             fail_silently=False,
         )
